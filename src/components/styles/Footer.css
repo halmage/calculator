@@ -1,0 +1,27 @@
+:root{
+	/* colores */
+	--bg--footer-style: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(43, 88, 118), rgb(78, 67, 118)) repeat scroll 0% 0%;
+	--bg--text-color: white;
+
+	/* tamaños definidos */
+	--sz--size-width: 100%;
+	--sz--size-height: 15vh;
+}
+
+.footer-style{
+	background: var(--bg--footer-style);
+}
+
+.navbar-nav .nav-link {
+	color: white;
+}
+
+.logo-style{
+	width: var(--sz--size-width);
+	height: var(--sz--size-height);
+}
+
+.logo-test-style{
+	color: white;
+	text-shadow: 1px 1px 1px cornflowerblue;
+}

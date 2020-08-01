@@ -4,6 +4,7 @@ import {BrowserRouter,Route,Switch} from 'react-router-dom';
 /* Llamadas de las paginas */
 import HomeContainer       from '../pages/container/HomeContainer';
 import CardNewContainer    from '../pages/container/CardNewContainer';
+import MyProfileContainer from '../pages/container/MyProfileContainer';
 import CalculatorContainer from '../pages/container/CalculatorContainer';
 
 
@@ -14,6 +15,7 @@ class App extends Component{
 				<Switch>				
 					<Route exact path="/" component={HomeContainer}/>
 					<Route exact path="/crear-card" component={CardNewContainer}/>
+					<Route exact path="/mi-perfil" component={MyProfileContainer}/>
 					<Route exact path="/calculadora" component={CalculatorContainer}/>
 				</Switch>
 			</BrowserRouter>

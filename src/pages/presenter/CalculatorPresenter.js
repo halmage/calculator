@@ -1,10 +1,11 @@
 import React,{Fragment,Component} from 'react';
 
 /* Importacion de componentes */
+import Footer from '../../components/Footer';
 import Header from '../../components/Header';
+import TitlePage from '../../components/TitlePage';
 import TableOperation from '../../components/TableOperation';
 import FormCalculator from '../../components/FormCalculator';
-import TitlePage from '../../components/TitlePage';
 
 class CalculatorPresenter extends Component{
 	render() {
@@ -28,7 +29,8 @@ class CalculatorPresenter extends Component{
 							</div>
 					  </div>
 					</div>					
-				</section>
+				</section>				
+				<Footer/>
 			</Fragment>	
 		);
 	}

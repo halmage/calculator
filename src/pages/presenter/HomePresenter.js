@@ -1,10 +1,11 @@
 import React,{Component,Fragment} from 'react';
 
 /* Llamando componentes */
-import Header    from '../../components/Header';
-import ListCard  from '../../components/ListCard';
-import Information from '../../components/Information';
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
+import ListCard from '../../components/ListCard';
 import TitlePage from '../../components/TitlePage';
+import Information from '../../components/Information';
 
 class HomePresenter extends Component{
 
@@ -36,6 +37,7 @@ class HomePresenter extends Component{
 						</div>						
 					</div>
 				</div>
+				<Footer/>
 			</Fragment>
 		);
 	}
