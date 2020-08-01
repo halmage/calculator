@@ -1,17 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React,{StrictMode} from 'react';
+import ReactDOM,{render} from 'react-dom';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+/* Importando libreria */
+import 'bootstrap/dist/css/bootstrap.css';
+
+/* Llamando componentes */
+import App from './routes/App';
+
+const container = document.getElementById('root');
+
+render(
+  <StrictMode>
+  	<App/>
+  </StrictMode>,
+  container  
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();

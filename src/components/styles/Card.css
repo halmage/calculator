@@ -1,0 +1,12 @@
+:root{
+
+	/* Tamaños */
+	--sz-width-card:20%;
+	--sz-height-card:20vh;
+
+}
+
+.card-image-style{
+	width: var(--sz-size-card);
+	height: var(--sz-height-card);
+}

@@ -1,0 +1,13 @@
+.bg-header-style{
+	background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(43, 88, 118), rgb(78, 67, 118)) repeat scroll 0% 0%;	
+}
+
+.nav-link{
+	color: white;
+	text-shadow: 1px 1px 1px cornflowerblue;
+}
+
+.nav-link:hover{
+	background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(187, 210, 197), rgb(83, 105, 118)) repeat scroll 0% 0%;
+	color: cornsilk;
+}

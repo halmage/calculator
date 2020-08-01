@@ -1,0 +1,10 @@
+.bg-style-title-page{
+	box-shadow: 1px 1px 1px #292E49; 
+	background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(43, 88, 118), rgb(78, 67, 118)) repeat scroll 0% 0%;
+}
+
+.text-title-style{
+	color: white;
+	text-shadow: 1px 1px 1px cornflowerblue;
+	font-family: fantasy;
+}
