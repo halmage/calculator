@@ -23,8 +23,8 @@ class CardNewContainer extends Component{
 	handleChange = (e) => {		
 		this.setState({
 			data:{
-			...this.state.data,
-			[e.target.name]: e.target.value
+				...this.state.data,
+				[e.target.name]: e.target.value
 			}
 		});
 	}
@@ -33,9 +33,9 @@ class CardNewContainer extends Component{
 		return (
 			<Fragment>
 				<CardNewPersenter 
+					data = {this.state.data}
 					onSubmit = {this.handleSubmit}
 					onChange = {this.handleChange}
-					data = {this.state.data}
 				/>		
 			</Fragment>
 		);

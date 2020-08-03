@@ -1,3 +1,8 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
 :root{
 	/* colores */
 	--bg--footer-style: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(43, 88, 118), rgb(78, 67, 118)) repeat scroll 0% 0%;
@@ -10,6 +15,8 @@
 
 .footer-style{
 	background: var(--bg--footer-style);
+  	width:100%; 
+  	position:relative; 
 }
 
 .navbar-nav .nav-link {

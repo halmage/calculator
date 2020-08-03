@@ -11,7 +11,7 @@ class Footer extends Component{
 	render() {
 		return (
 			<Fragment>
-				<footer className="navbar-nav fixed-bottom footer-style">
+				<footer className="navbar-nav footer-style">
 					<div className="container">
 						<div class="row mt-3 mb-3">
 							<div class="col-md-4">							

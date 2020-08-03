@@ -1,24 +1,36 @@
 import React,{Fragment,Component} from 'react';
 
 /* Importando componentes */
+import Profile from '../../components/Profile';
 import TitlePage from '../../components/TitlePage';
 import FormProfile from '../../components/FormProfile';
 
+/* Importación de css */
+import '../styles/MyProfilePresenter.css';
+
 class MyProfilePresenter extends Component{
 	render() {
-		const {data} = this.props;
+		const {data, onChange, onSubmit} = this.props;
 		return (
 			<Fragment>
-				<section className="container mt-5">
+				<section className="container my-profile-container mt-5">
 					<div className="card">
 						<div className="card-title">
 							<TitlePage data={data}/>
 						</div>
 						<div className="card-body">
 							<div className="row">				
-								<div className="col-md-6"></div>
 								<div className="col-md-6">
-									<FormProfile/>
+									<Profile
+										data = {data}
+									/>
+								</div>
+								<div className="col-md-6">
+									<FormProfile
+										data = {data}
+										onChange = {onChange}
+										onSubmit = {onSubmit}
+									/>
 								</div>				
 							</div>
 						</div>

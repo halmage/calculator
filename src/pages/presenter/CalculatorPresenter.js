@@ -7,13 +7,16 @@ import TitlePage from '../../components/TitlePage';
 import TableOperation from '../../components/TableOperation';
 import FormCalculator from '../../components/FormCalculator';
 
+/* Importación de estilos de css */
+import '../styles/CalculatorPresenter.css';
+
 class CalculatorPresenter extends Component{
 	render() {
 		const {onChange, onClick, data} = this.props;
 		return (			
 			<Fragment>	
 				<Header/>
-				<section className="container mt-5">					
+				<section className="container container-calculator mt-5">					
 					<div class="card">
 					  <div class="card-title">
 					  		<TitlePage data = {data}/>

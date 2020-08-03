@@ -7,6 +7,9 @@ import Header   from '../../components/Header';
 import FormCard from '../../components/FormCard';
 import TitlePage from '../../components/TitlePage';
 
+/* Llamando estilos de css */
+import '../styles/CardNewPresenter.css';
+
 class CardNewPresenter extends Component{
 
 	render() {
@@ -14,7 +17,7 @@ class CardNewPresenter extends Component{
 		return (
 			<Fragment>
 				<Header/>	
-					<div className="container mt-5">
+					<section className="container container-card-new mt-5">
 						<div class="card">
 							<div className="card-title">
 								<TitlePage data={data}/>
@@ -34,7 +37,7 @@ class CardNewPresenter extends Component{
 								</div>	
 							</div>
 						</div>											
-					</div>
+					</section>
 				<Footer/>
 			</Fragment>
 		);

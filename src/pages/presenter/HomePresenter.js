@@ -7,6 +7,9 @@ import ListCard from '../../components/ListCard';
 import TitlePage from '../../components/TitlePage';
 import Information from '../../components/Information';
 
+/* Importación de estilos de css */
+import '../styles/HomePresenter.css';
+
 class HomePresenter extends Component{
 
 	constructor(props) {
@@ -22,7 +25,7 @@ class HomePresenter extends Component{
 		return (
 			<Fragment>
 				<Header/>
-				<div class="container mt-5">				
+				<section class="container home-container mt-5">				
 					<div className="row">					
 						<div className="col-md-5 col-lg-4">						
 							<ListCard info={this.state.info}/>
@@ -36,7 +39,7 @@ class HomePresenter extends Component{
 							</div>
 						</div>						
 					</div>
-				</div>
+				</section>
 				<Footer/>
 			</Fragment>
 		);

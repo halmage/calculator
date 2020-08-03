@@ -1,0 +1,10 @@
+:root{
+	/* Tamaños */
+	--sz-width-img-avatar: 233px;
+	--sz-height-img-avatar: 236px;
+}
+
+.img-avatar-style{
+	width: var(--sz-width-img-avatar);
+	height: var(--sz-height-img-avatar);
+}
