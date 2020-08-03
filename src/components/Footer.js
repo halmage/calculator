@@ -11,7 +11,7 @@ class Footer extends Component{
 	render() {
 		return (
 			<Fragment>
-				<footer className="navbar-nav footer-style">
+				<footer className="navbar-nav fixed-bottom  footer-style">
 					<div className="container">
 						<div class="row mt-3 mb-3">
 							<div class="col-md-4">							
@@ -42,7 +42,7 @@ class Footer extends Component{
 								<ul className="navbar-nav text-center mr-5">
 									<li className="nav-item">
 									</li>
-										<Link to="/" className="nav-link">Home</Link>
+										<Link to="/billetera" className="nav-link">Billetera</Link>
 									<li className="nav-item">
 										<Link to="/crear-card" className="nav-link">Crear Card</Link>
 									</li>

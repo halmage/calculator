@@ -1,8 +1,6 @@
 import React,{Fragment,Component} from 'react';
 
 /* Llmando a componentes */
-import Footer from '../../components/Footer';
-import Header from '../../components/Header';
 import MyProfilePresenter from '../presenter/MyProfilePresenter';
 
 class MyProfileContainer extends Component{
@@ -38,13 +36,11 @@ class MyProfileContainer extends Component{
 	render() {
 		return (
 			<Fragment>
-				<Header/>
 					<MyProfilePresenter 
 						data = {this.state.data}
 						onChange = {this.hadlerChange}
 						onSubmit = {this.hadlerSubmit}
 					/>
-				<Footer/>
 			</Fragment>
 		);
 	}

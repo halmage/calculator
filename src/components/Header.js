@@ -14,6 +14,7 @@ class Header extends Component{
 						<Link to="/crear-card" class="nav-link">Crear Card</Link>
 						<Link to="/calculadora" class="nav-link">Calculadora</Link>
 						<Link to="/mi-perfil" class="nav-link">Mi perfil</Link>
+						<Link to="/billetera" class="nav-link">Billetera</Link>
 					</nav>
 				</header>
 			</Fragment>

@@ -1,0 +1,9 @@
+:root{
+
+	/* Margenes de la pagina */
+	--mr-height-content: 66.9vh;
+}
+
+.wallet-container{
+	height: var(--mr-height-content);
+}

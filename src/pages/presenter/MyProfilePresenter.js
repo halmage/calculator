@@ -1,6 +1,8 @@
 import React,{Fragment,Component} from 'react';
 
 /* Importando componentes */
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
 import Profile from '../../components/Profile';
 import TitlePage from '../../components/TitlePage';
 import FormProfile from '../../components/FormProfile';
@@ -13,6 +15,7 @@ class MyProfilePresenter extends Component{
 		const {data, onChange, onSubmit} = this.props;
 		return (
 			<Fragment>
+				<Header/>
 				<section className="container my-profile-container mt-5">
 					<div className="card">
 						<div className="card-title">
@@ -36,6 +39,7 @@ class MyProfilePresenter extends Component{
 						</div>
 					</div>
 				</section>
+				<Footer/>
 			</Fragment>
 		);
 	}
