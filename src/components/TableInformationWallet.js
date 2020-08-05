@@ -5,7 +5,7 @@ import './styles/TableInformationWallet.css';
 
 class TableInformationWallet extends Component{
 	render() {
-		const {data} = this.props;
+		const {info} = this.props;
 		return (
 			<Fragment>
 				<table className="table text-center mt-4">
@@ -17,11 +17,18 @@ class TableInformationWallet extends Component{
 						</tr>
 					</thead>
 					<tbody id="table">
-						<tr>
-							<th scope="row">{data.id}</th>
-							<td>{data.description}</td>
-							<td className={data.money > 0 ? 'text-success' : 'text-danger'}>{data.money}$</td>
-						</tr>
+					{						
+							info.map((inf) =>{
+												return(
+															<Fragment>
+																				<tr>
+																					<th scope="row">{inf.id}</th>
+																					<td>{inf.description}</td>
+																					<td className={inf.money > 0 ? 'text-success' : 'text-danger'}>{inf.money}$</td>
+																				</tr>
+															</Fragment>
+																		)})
+					}
 					</tbody>
 				</table>
 			</Fragment>

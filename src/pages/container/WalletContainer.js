@@ -11,27 +11,26 @@ class WalletContainer extends Component{
 				wallet:0,
 				description:"",
 				money:""
-			}
+			},
+			info: [],
+			contador:0
 		}
 
 	handlerClick = (e) => {
-		e.preventDefault();
-		this.setState({
-			data:{
-				id: this.state.data.id + 1,
-				wallet: this.state.data.wallet + parseFloat( this.state.data.money)
-			}
-		});
+		e.preventDefault();		
 
-		document.getElementById('miForm').reset();
+        this.setState({
+            data: {
+                id: this.state.data.id + 1,
+                wallet: this.state.data.wallet + parseFloat(this.state.data.money)                
+            }
+        }); 
 
-		let element = document.createElement('tr');
-		let content = document.createTextNode(`${this.state.data.wallet} $`);
-		element.appendChild(content);
+        this.state.info.push(this.state.data);
 
-		let padre = document.getElementById("table");
-		let hijo  = document.getElementsByTagName("tr")[0];
-		padre.appendChild(element);		
+        console.log(this.state.info);
+        document.getElementById('miForm').reset();
+			
 	}
 
 	handlerChange = (e) =>{
@@ -48,6 +47,7 @@ class WalletContainer extends Component{
 			<Fragment>
 				<WalletPresenter
 					data = {this.state.data}
+					info = {this.state.info}
 					onChange = {this.handlerChange}
 					onClick  = {this.handlerClick}
 				/>
