@@ -12,7 +12,7 @@ import TableInformationWallet from '../../components/TableInformationWallet'
 
 class WalletPresenter extends Component{
 	render() {
-		const {data} = this.props;
+		const {data, onChange, onClick} = this.props;
 		return (
 			<Fragment>
 				<Header/>
@@ -20,7 +20,11 @@ class WalletPresenter extends Component{
 						<MoneyWallet
 							data = {data}
 						/>	
-						<FormWallet/>		
+						<FormWallet
+							data = {data}
+							onChange = {onChange}
+							onClick = {onClick}
+						/>		
 						<TableInformationWallet
 							data = {data}
 						/>			

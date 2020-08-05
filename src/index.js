@@ -10,9 +10,7 @@ import App from './routes/App';
 const container = document.getElementById('root');
 
 render(
-  <StrictMode>
-  	<App/>
-  </StrictMode>,
+  	<App/>,
   container  
 );
 

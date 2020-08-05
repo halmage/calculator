@@ -8,21 +8,19 @@ class TableInformationWallet extends Component{
 		const {data} = this.props;
 		return (
 			<Fragment>
-				<table className="table mt-4">
+				<table className="table text-center mt-4">
 					<thead className="thead-style">
 						<tr>
 							<th scope="col">#</th>
 							<th scope="col">Descripción</th>
-							<th scope="col"></th>
 							<th scope="col">Monto</th>
 						</tr>
 					</thead>
-					<tbody>
+					<tbody id="table">
 						<tr>
-							<th scope="row">1</th>
+							<th scope="row">{data.id}</th>
 							<td>{data.description}</td>
-							<td></td>
-							<td>{data.money}$</td>
+							<td className={data.money > 0 ? 'text-success' : 'text-danger'}>{data.money}$</td>
 						</tr>
 					</tbody>
 				</table>
