@@ -1,7 +1,7 @@
 import React,{Fragment,Component} from 'react';
 
 /* importando estilos */
-import './styles/FormProfile.css';
+import '../assets/styles/componentes/FormProfile.css';
 
 class FormProfile extends Component{
 	render() {

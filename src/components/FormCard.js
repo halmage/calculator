@@ -1,7 +1,7 @@
 import React,{Fragment,Component} from 'react';
 
 /* Importando estilos de css */
-import './styles/FormCard.css';
+import '../assets/styles/componentes/FormCard.css';
 
 class FormCard extends Component{
 	render() {

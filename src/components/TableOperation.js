@@ -1,7 +1,7 @@
 import React,{Fragment,Component} from 'react';
 
 /* importar estilos de css */
-import './styles/TableOperation.css'
+import '../assets/styles/componentes/TableOperation.css';
 
 class TableOperation extends Component{
 	render() {

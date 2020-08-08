@@ -2,10 +2,10 @@ import {Link} from 'react-router-dom';
 import React,{Fragment, Component} from 'react';
 
 /* Llamado de estilo de css */
-import './styles/Footer.css';
+import '../assets/styles/componentes/Footer.css';
 
 /* Importando imagenes */
-import Logo from '../images/logo/crearlogogratis_1024x1024_01.png';
+import Logo from '../assets/images/logo/crearlogogratis_1024x1024_01.png';
 
 class Footer extends Component{
 	render() {

@@ -8,7 +8,7 @@ import TitlePage from '../../components/TitlePage';
 import Information from '../../components/Information';
 
 /* Importación de estilos de css */
-import '../styles/HomePresenter.css';
+import '../../assets/styles/pages/HomePresenter.css';
 
 class HomePresenter extends Component{
 

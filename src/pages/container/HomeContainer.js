@@ -4,11 +4,9 @@ import React,{Component,Fragment} from 'react';
 import HomePresenter from '../presenter/HomePresenter';
 
 /* Llamadas de imagenes */
-import image1 from '../../images/articles/image-1.jpg';
-
-import image2 from '../../images/articles/image-2.jpg';
-
-import image3 from '../../images/articles/image-3.jpg';
+import image1 from '../../assets/images/articles/image-1.jpg';
+import image2 from '../../assets/images/articles/image-2.jpg';
+import image3 from '../../assets/images/articles/image-3.jpg';
 
 class HomeContainer extends Component{
 

@@ -1,14 +1,14 @@
 import React,{Fragment,Component} from 'react';
 
 /* Importando estilos css */
-import '../styles/WalletPresenter.css';
+import '../../assets/styles/pages/WalletPresenter.css';
 
 /* Importando componentes */
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import FormWallet from '../../components/FormWallet';
 import MoneyWallet from '../../components/MoneyWallet';
-import TableInformationWallet from '../../components/TableInformationWallet'
+import TableInformationWallet from '../../components/TableInformationWallet';
 
 class WalletPresenter extends Component{
 	render() {

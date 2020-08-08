@@ -1,14 +1,14 @@
 import React,{Fragment,Component} from 'react';
 
 /* importando estilos */
-import './styles/FormCalculator.css';
+import '../assets/styles/componentes/FormCalculator.css';
 
 class FormCalculator extends Component{
 	render() {
 		const {onChange, onClick, data} = this.props;
 		return (
 			<Fragment>
-				<form>
+				<form id="miForm">
 					<div class="form-group">
 						<label for="operation" className="label-style">Ingrese una opearción</label>
 						<select className="form-control input-style" name="operation" id="operation" value={data.operation} onChange={onChange}>

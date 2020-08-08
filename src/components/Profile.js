@@ -1,7 +1,7 @@
 import React,{Fragment,Component} from 'react';
 
 /* Importación de estilo de css */
-import './styles/Profile.css';
+import '../assets/styles/componentes/Profile.css';
 
 class Profile extends Component{
 	render() {

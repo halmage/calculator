@@ -1,5 +1,7 @@
 import React,{Component} from 'react';
-import './styles/TitlePage.css';
+
+/* Importando estilos a la pagina */
+import '../assets/styles/componentes/TitlePage.css';
 
 class TitlePage extends Component{
 	render() {

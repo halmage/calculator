@@ -8,7 +8,7 @@ import FormCard from '../../components/FormCard';
 import TitlePage from '../../components/TitlePage';
 
 /* Llamando estilos de css */
-import '../styles/CardNewPresenter.css';
+import '../../assets/styles/pages/CardNewPresenter.css';
 
 class CardNewPresenter extends Component{
 

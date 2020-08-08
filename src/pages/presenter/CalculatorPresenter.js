@@ -8,11 +8,12 @@ import TableOperation from '../../components/TableOperation';
 import FormCalculator from '../../components/FormCalculator';
 
 /* Importación de estilos de css */
-import '../styles/CalculatorPresenter.css';
+import '../../assets/styles/pages/CalculatorPresenter.css';
 
 class CalculatorPresenter extends Component{
 	render() {
-		const {onChange, onClick, data} = this.props;
+		const {onClick, onChange, data} = this.props;
+
 		return (			
 			<Fragment>	
 				<Header/>
@@ -27,7 +28,7 @@ class CalculatorPresenter extends Component{
 									<TableOperation data = {data} /> 
 								</div>
 								<div class="col-md-12 col-lg-6">
-									<FormCalculator onChange = {onChange} onClick = {onClick} data = {data} /> 
+									<FormCalculator onClick = {onClick} onChange = {onChange} data = {data} /> 
 								</div>
 							</div>
 					  </div>

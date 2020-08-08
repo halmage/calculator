@@ -5,37 +5,55 @@ import WalletPresenter from '../presenter/WalletPresenter';
 
 class WalletContainer extends Component{
 
+	global ={
+		varibles:{
+			vdate: new Date()
+		}
+	}
+
 	state = {
 			data:{
-				id: 0,
+				id: 1,
 				wallet:0,
 				description:"",
-				money:""
+				money:"",
+				date: `
+					    ${this.global.varibles.vdate.getHours()}:${this.global.varibles.vdate.getMinutes()}:${this.global.varibles.vdate.getSeconds()}
+					    ${this.global.varibles.vdate.getDate()}/${this.global.varibles.vdate.getMonth()}/${this.global.varibles.vdate.getFullYear()}
+					  `
 			},
-			info: [],
-			contador:0
+			info: []
 		}
 
 	handlerClick = (e) => {
-		e.preventDefault();		
+		e.preventDefault();
+		let date = new Date();
+		let money = document.getElementById('money').value;
+		let description = document.getElementById('description').value;
 
-        this.setState({
-            data: {
-                id: this.state.data.id + 1,
-                wallet: this.state.data.wallet + parseFloat(this.state.data.money)                
-            }
-        }); 
+		if((description.length > 0)&& (money.length > 0)){
+       		this.setState({
+	            data: {
+		                id: this.state.data.id + 1,
+		                wallet: this.state.data.wallet + parseFloat(this.state.data.money),
+		                date: `
+						    ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}
+						    ${date.getDate()}/${date.getMonth()}/${date.getFullYear()}
+						  `
+	        		}
+			});
 
-        this.state.info.push(this.state.data);
+				this.state.info.push(this.state.data);
+				document.getElementById('miForm').reset();
+		}else {
+				alert("Todos los campos son obligatorios");
+		}
 
-        console.log(this.state.info);
-        document.getElementById('miForm').reset();
-			
 	}
 
 	handlerChange = (e) =>{
 		this.setState({
-			data:{				
+			data:{
 				...this.state.data,
 				[e.target.name] : e.target.value
 			}

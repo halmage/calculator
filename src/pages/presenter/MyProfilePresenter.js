@@ -8,7 +8,7 @@ import TitlePage from '../../components/TitlePage';
 import FormProfile from '../../components/FormProfile';
 
 /* Importación de css */
-import '../styles/MyProfilePresenter.css';
+import '../../assets/styles/pages/MyProfilePresenter.css';
 
 class MyProfilePresenter extends Component{
 	render() {

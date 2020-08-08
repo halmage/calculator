@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom';
 import React,{Fragment,Component} from 'react';
 
 /* Importando Css */
-import './styles/Header.css';
+import '../assets/styles/componentes/Header.css';
 
 class Header extends Component{
 	render() {
