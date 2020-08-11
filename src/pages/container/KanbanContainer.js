@@ -4,10 +4,54 @@ import React,{Fragment,Component} from 'react';
 import KanbanPresenter from '../presenter/KanbanPresenter';
 
 class KanbanContainer extends Component{
+
+	state = {
+		data:{
+			title: "",
+			content: "",
+			priority: "",
+			user: "",
+			titlePage:"creacion de card"
+		},
+
+		info: []
+	}
+	
+
+	handleChange = (e) => {		
+		this.setState({
+			data:{
+				...this.state.data,
+				[e.target.name]: e.target.value
+			}
+		});
+	}
+
+	handleClick = (e) => {
+		e.preventDefault();
+		this.setState({
+	            data: {		                
+						title: this.state.data.title,
+						content: this.state.data.content,
+						priority: this.state.data.priority,
+						user: this.state.data.image						  
+	        		}
+			});
+
+		this.state.info.push(this.state.data);
+		document.getElementById('miForm').reset();
+		
+	}
+
 	render() {
 		return (
 			<Fragment>
-				<KanbanPresenter/>
+				<KanbanPresenter
+					data = {this.state.data}
+					onClick = {this.handleClick}
+					onChange = {this.handleChange}
+					info = {this.state.info}
+				/>
 			</Fragment>
 		);
 	}

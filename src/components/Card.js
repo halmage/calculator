@@ -3,7 +3,7 @@ import '../assets/styles/componentes/Card.css';
 
 class Card extends Component{
 	render() {
-		const {info} = this.props;
+		const {info} = this.props;		
 		return (
 			<Fragment>
 				<div className="card" style={{width: "18rem", background:`${info.color}`}}>
@@ -11,7 +11,7 @@ class Card extends Component{
 					<div className="card-body">
 						<h5 className="card-title">{info.title}</h5>
 						<p className="card-text">{info.content}</p>
-					</div>
+					</div>					
 				</div>
 			</Fragment>
 		);

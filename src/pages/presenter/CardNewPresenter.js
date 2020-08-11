@@ -13,7 +13,7 @@ import '../../assets/styles/pages/CardNewPresenter.css';
 class CardNewPresenter extends Component{
 
 	render() {
-		const {onChange,onSubmit,data} = this.props;
+		const {onChange,onClick,data} = this.props;
 		return (
 			<Fragment>
 				<Header/>	
@@ -30,7 +30,7 @@ class CardNewPresenter extends Component{
 									<div class="col-md-6">
 										<FormCard
 											onChange = {onChange}
-											onSubmit = {onSubmit}
+											onClick = {onClick}
 											data = {data}
 										/>					
 									</div>

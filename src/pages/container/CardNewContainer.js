@@ -15,8 +15,9 @@ class CardNewContainer extends Component{
 		}
 	}
 
-	handleSubmit = (e) => {
+	handleClick = (e) => {
 		e.preventDefault();
+		document.getElementById('miForm')
 		console.log(this.state);
 	}
 
@@ -34,7 +35,7 @@ class CardNewContainer extends Component{
 			<Fragment>
 				<CardNewPersenter 
 					data = {this.state.data}
-					onSubmit = {this.handleSubmit}
+					onClick = {this.handleClick}
 					onChange = {this.handleChange}
 				/>		
 			</Fragment>

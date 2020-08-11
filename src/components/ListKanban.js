@@ -1,16 +1,15 @@
 import React,{Fragment,Component} from 'react';
-import Card from './Card';
+import Kanban from './Kanban';
 
-class ListCard extends Component{
+class ListKanban extends Component{
 	render() {
 		const {info} = this.props;
-		console.log(info.length);
 		return (
 			info.map((inf,i) =>{
 				return(
 					<Fragment>					
 						<div className="col-md-5 mt-3">					
-							<Card key={i} info={inf}/>
+							<Kanban key={i} info={inf}/>
 						</div>
 					</Fragment>
 				)
@@ -19,4 +18,4 @@ class ListCard extends Component{
 	}
 }
 
-export default ListCard;
+export default ListKanban;

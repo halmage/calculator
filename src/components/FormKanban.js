@@ -3,7 +3,7 @@ import React,{Fragment,Component} from 'react';
 /* Importando estilos de css */
 import '../assets/styles/componentes/FormCard.css';
 
-class FormCard extends Component{
+class FormKanban extends Component{
 	render() {
 		const {onClick, onChange, data} = this.props;
 		return (
@@ -19,18 +19,24 @@ class FormCard extends Component{
 						</textarea>
 					  </div>
 					  <div class="form-group">
-					    <label for="image" className="label-style">Ingrese imagen</label>
-					    <input type="text" class="form-control input-style" name="image" id="image" value={data.image} onChange={onChange}/>
+					    <label for="priority" className="label-style">Ingrese dificultad</label>
+					    <select className="form-control" name="priority" id="priority" onChange={onChange}>
+					    	<option value="">-- seleccione una opción --</option>
+					    	<option value="bajo">Bajo</option>
+					    	<option value="medio">Medio</option>
+					    	<option value="alto">Alto</option>
+					    </select>
 					  </div>
 					  <div class="form-group">
-					    <label for="color" className="label-style">Ingrese color</label>
-					    <input type="text" class="form-control input-style" name="color" id="color" value={data.color} onChange={onChange}/>
+					    <label for="user" className="label-style">Ingrese a quien va dirigido</label>
+					    <input type="text" class="form-control input-style" name="user" id="user" value={data.user} onChange={onChange}/>
 					  </div>				  
 					  <button type="submit" class="btn btn-block btn-primary btn-style" onClick={onClick}>Submit</button>
+
 					</form>
 			</Fragment>
 		);
 	}
 }
 
-export default FormCard;
+export default FormKanban;
