@@ -21,6 +21,7 @@ class WalletContainer extends Component{
 					    ${this.global.varibles.vdate.getHours()}:${this.global.varibles.vdate.getMinutes()}:${this.global.varibles.vdate.getSeconds()}
 					    ${this.global.varibles.vdate.getDate()}/${this.global.varibles.vdate.getMonth()}/${this.global.varibles.vdate.getFullYear()}
 					  `
+				,titlePage:"billetera digital"
 			},
 			info: []
 		}
@@ -35,11 +36,12 @@ class WalletContainer extends Component{
        		this.setState({
 	            data: {
 		                id: this.state.data.id + 1,
-		                wallet: this.state.data.wallet + parseFloat(this.state.data.money),
+		                wallet: parseFloat(this.state.data.wallet) + parseFloat(this.state.data.money),
 		                date: `
 						    ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}
-						    ${date.getDate()}/${date.getMonth()}/${date.getFullYear()}
+						    ${date.getDate()}/${date.getMonth()}/${date.getFullYear()}						    
 						  `
+						,titlePage:"billetera digital"
 	        		}
 			});
 

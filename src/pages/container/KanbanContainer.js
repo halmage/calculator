@@ -11,7 +11,7 @@ class KanbanContainer extends Component{
 			content: "",
 			priority: "",
 			user: "",
-			titlePage:"creacion de card"
+			titlePage:"kanban"
 		},
 
 		info: []
@@ -34,7 +34,8 @@ class KanbanContainer extends Component{
 						title: this.state.data.title,
 						content: this.state.data.content,
 						priority: this.state.data.priority,
-						user: this.state.data.image						  
+						user: this.state.data.image,	
+						titlePage:"creacion de card"					  
 	        		}
 			});
 

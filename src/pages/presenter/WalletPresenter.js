@@ -9,6 +9,7 @@ import Header from '../../components/Header';
 import FormWallet from '../../components/FormWallet';
 import MoneyWallet from '../../components/MoneyWallet';
 import TableInformationWallet from '../../components/TableInformationWallet';
+import TitlePage from '../../components/TitlePage';
 
 class WalletPresenter extends Component{
 	render() {
@@ -16,18 +17,25 @@ class WalletPresenter extends Component{
 		return (
 			<Fragment>
 				<Header/>
-					<section className="container mt-5 wallet-container">					
-						<MoneyWallet
-							data = {data}
-						/>	
-						<FormWallet
-							data = {data}
-							onChange = {onChange}
-							onClick = {onClick}
-						/>		
-						<TableInformationWallet
-							info = {info}
-						/>			
+					<section className="container mt-5 wallet-container">	
+						<div className="card">
+							<div className="card-title">
+								<TitlePage data={data}/>
+							</div>
+								<div className="card-body">
+									<MoneyWallet
+										data = {data}
+									/>	
+									<FormWallet
+										data = {data}
+										onChange = {onChange}
+										onClick = {onClick}
+									/>		
+									<TableInformationWallet
+										info = {info}
+									/>			
+								</div>
+						</div>
 					</section>
 				<Footer/>
 			</Fragment>
