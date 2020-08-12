@@ -9,7 +9,7 @@ class ListCard extends Component{
 			info.map((inf,i) =>{
 				return(
 					<Fragment>					
-						<div className="col-md-5 mt-3">					
+						<div className="col-md-6 mt-3">					
 							<Card key={i} info={inf}/>
 						</div>
 					</Fragment>
@@ -18,5 +18,4 @@ class ListCard extends Component{
 		);
 	}
 }
-
 export default ListCard;

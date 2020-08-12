@@ -9,8 +9,9 @@ import image2 from '../../assets/images/articles/image-2.jpg';
 import image3 from '../../assets/images/articles/image-3.jpg';
 
 class HomeContainer extends Component{
-
-	state = {
+	constructor(props) {
+	  super(props);	
+	  this.state = {
 				info:[
 					{	
 						title:"El rey leon",
@@ -31,8 +32,8 @@ class HomeContainer extends Component{
 					}
 				],
 				titlePage:"Enciclopedia"
-			}
-
+			};
+	}
 	render() {
 		return (
 			<Fragment>
@@ -44,5 +45,4 @@ class HomeContainer extends Component{
 		);
 	}
 }
-
 export default HomeContainer;

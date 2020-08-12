@@ -10,5 +10,4 @@ class MoneyWallet extends Component{
 		);
 	}
 }
-
 export default MoneyWallet;

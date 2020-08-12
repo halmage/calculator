@@ -11,7 +11,6 @@ import TitlePage from '../../components/TitlePage';
 import '../../assets/styles/pages/CardNewPresenter.css';
 
 class CardNewPresenter extends Component{
-
 	render() {
 		const {onChange,onClick,data} = this.props;
 		return (
@@ -43,5 +42,4 @@ class CardNewPresenter extends Component{
 		);
 	}
 }
-
 export default CardNewPresenter;

@@ -27,5 +27,4 @@ class Kanban extends Component{
 		);
 	}
 }
-
 export default Kanban;

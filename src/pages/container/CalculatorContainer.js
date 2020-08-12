@@ -3,19 +3,20 @@ import React,{Fragment,Component} from 'react';
 /* Importar componentes */
 import CalculatorPresenter from '../presenter/CalculatorPresenter';
 
-class CalculatorContainer extends Component{	  
-	
-    state = {
-        data: {
-            operation: "",
-            num1: "",
-            num2: "",
-            result: "",
-            color: "",
-            titlePage: "Calculadora Actualizada"
-        }
-    }
-	
+class CalculatorContainer extends Component{	  	
+	constructor(props) {
+	  super(props);	
+	  this.state = {
+	        data: {
+	            operation: "",
+	            num1: "",
+	            num2: "",
+	            result: "",
+	            color: "",
+	            titlePage: "Calculadora Actualizada"
+	        }
+	    }	
+	}
 	handleChange = (e) => {
 		this.setState({
 			data:{
@@ -24,7 +25,6 @@ class CalculatorContainer extends Component{
 			}		
 		});
 	}
-
 	sumaOperation = () => {
 		this.setState({
             data: {
@@ -36,8 +36,7 @@ class CalculatorContainer extends Component{
                 result: parseFloat(this.state.data.num1) + parseFloat(this.state.data.num2)
             }
 		});
-	} 
-
+	}
 	restaOperation = () => {
         this.setState({
             data: {
@@ -50,7 +49,6 @@ class CalculatorContainer extends Component{
             }
         });
 	}
-
 	multiplicacionOperation = () => {
         this.setState({
             data: {
@@ -63,7 +61,6 @@ class CalculatorContainer extends Component{
             }
         });
 	}
-
 	divisionOperation = () => {
         if (this.state.data.num2 == 0) {
             alert("Esta operacion no puede ser realizada");
@@ -80,37 +77,29 @@ class CalculatorContainer extends Component{
             }
         });
 	}
-
 	handleClick = (e) => {
 		e.preventDefault();
-
 		switch (this.state.data.operation) {
-
 			case '+':
 				this.sumaOperation();
-									break;
-
+				break;
 			case '-':
 				this.restaOperation();
-									break;
+				break;
 
 			case '*':
 				this.multiplicacionOperation();		
-									break;
+				break;
 
 			case '/':
 				this.divisionOperation();
-									break;
+				break;
 
 			default:
-
 				alert("No ha sido seleccionada ninguna operación");
-
 				break;
 		}		
-
-	}
-	
+	}	
 	render() {
 		return (
 			<Fragment>
@@ -123,5 +112,4 @@ class CalculatorContainer extends Component{
 		);
 	}
 }
-
 export default CalculatorContainer;

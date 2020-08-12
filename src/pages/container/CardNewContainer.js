@@ -4,23 +4,23 @@ import React,{Fragment,Component} from 'react';
 import CardNewPersenter from '../presenter/CardNewPresenter';
 
 class CardNewContainer extends Component{
-
-	state = {
-		data:{
-			title: "",
-			content: "",
-			image: "",
-			color: "",
-			titlePage:"creacion de card"
+	constructor(props) {
+	  super(props);	
+	  this.state = {
+			data:{
+				title: "",
+				content: "",
+				image: "",
+				color: "",
+				titlePage:"creacion de card"
+			}
 		}
 	}
-
 	handleClick = (e) => {
 		e.preventDefault();
 		document.getElementById('miForm')
 		console.log(this.state);
 	}
-
 	handleChange = (e) => {		
 		this.setState({
 			data:{
@@ -29,7 +29,6 @@ class CardNewContainer extends Component{
 			}
 		});
 	}
-
 	render() {
 		return (
 			<Fragment>
@@ -42,5 +41,4 @@ class CardNewContainer extends Component{
 		);
 	}
 }
-
 export default CardNewContainer;

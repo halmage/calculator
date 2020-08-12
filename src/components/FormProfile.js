@@ -33,6 +33,7 @@ class FormProfile extends Component{
 					<div className="form-group">
 						<label className="label-style" for="work">Ingrese trabajo</label>
 						<select className="form-control" name="work" id="work" onChange={onChange}>
+							<option value="">-- Seleccione una opción --</option>
 							<option value="ingeniero">ingeniero</option>
 							<option value="informatica">informatica</option>
 							<option value="computacion">computación</option>
@@ -49,5 +50,4 @@ class FormProfile extends Component{
 		);
 	}
 }
-
 export default FormProfile;

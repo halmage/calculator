@@ -38,5 +38,4 @@ class FormKanban extends Component{
 		);
 	}
 }
-
 export default FormKanban;

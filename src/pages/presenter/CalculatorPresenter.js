@@ -39,5 +39,4 @@ class CalculatorPresenter extends Component{
 		);
 	}
 }
-
 export default CalculatorPresenter;

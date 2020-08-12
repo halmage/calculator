@@ -4,20 +4,20 @@ import React,{Fragment,Component} from 'react';
 import KanbanPresenter from '../presenter/KanbanPresenter';
 
 class KanbanContainer extends Component{
+	constructor(props) {
+	  super(props);	
+	  this.state = {
+			data:{
+				title: "",
+				content: "",
+				priority: "",
+				user: "",
+				titlePage:"kanban"
+			},
 
-	state = {
-		data:{
-			title: "",
-			content: "",
-			priority: "",
-			user: "",
-			titlePage:"creacion de card"
-		},
-
-		info: []
+			info: []
+		}
 	}
-	
-
 	handleChange = (e) => {		
 		this.setState({
 			data:{
@@ -26,7 +26,6 @@ class KanbanContainer extends Component{
 			}
 		});
 	}
-
 	handleClick = (e) => {
 		e.preventDefault();
 		this.setState({
@@ -34,15 +33,13 @@ class KanbanContainer extends Component{
 						title: this.state.data.title,
 						content: this.state.data.content,
 						priority: this.state.data.priority,
-						user: this.state.data.image						  
+						user: this.state.data.image,	
+						titlePage:"creacion de card"					  
 	        		}
 			});
-
 		this.state.info.push(this.state.data);
-		document.getElementById('miForm').reset();
-		
+		document.getElementById('miForm').reset();		
 	}
-
 	render() {
 		return (
 			<Fragment>
@@ -56,5 +53,4 @@ class KanbanContainer extends Component{
 		);
 	}
 }
-
 export default KanbanContainer;

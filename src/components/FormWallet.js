@@ -43,5 +43,4 @@ class FormWallet extends Component{
 		);
 	}
 }
-
 export default FormWallet;
