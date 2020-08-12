@@ -1,12 +1,10 @@
 import React,{Fragment,Component} from 'react';
-
 /* Importando componentes */
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Profile from '../../components/Profile';
 import TitlePage from '../../components/TitlePage';
 import FormProfile from '../../components/FormProfile';
-
 /* Importación de css */
 import '../../assets/styles/pages/MyProfilePresenter.css';
 

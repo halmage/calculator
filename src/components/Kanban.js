@@ -2,8 +2,9 @@ import React,{Fragment,Component} from 'react';
 import '../assets/styles/componentes/Card.css';
 
 class Kanban extends Component{
+
 	render() {
-		const {info} = this.props;		
+		const {info,onClickDelete,id} = this.props;		
 		return (
 			<Fragment>
 				<div className="card" style={{width: "18rem"}}>
@@ -13,14 +14,13 @@ class Kanban extends Component{
 							<h6 className="text-center"><span class="badge badge-secondary text-center">{info.priority}</span></h6>
 						</div>
 					</div>
-
 					<div className="card-body">
 						<p className="card-text text-center">{info.content}</p>
 						<p className="text-center h3">{info.user}</p>
+						<p>{id}</p>
 					</div>
 					<div className="card-footer">
-
-						<button className="btn btn-block btn-danger">Eliminar</button>
+						<button className="btn btn-block btn-danger" onClick={onClickDelete.bind(this,id)}>Eliminar</button>
 					</div>
 				</div>
 			</Fragment>

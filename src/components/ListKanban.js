@@ -3,13 +3,17 @@ import Kanban from './Kanban';
 
 class ListKanban extends Component{
 	render() {
-		const {info} = this.props;
+		const {info,onClickDelete} = this.props;
 		return (
 			info.map((inf,i) =>{
 				return(
 					<Fragment>					
 						<div className="col-md-5 mt-3">					
-							<Kanban key={i} info={inf}/>
+							<Kanban key={i} 
+									id={i} 
+									info={inf}
+									onClickDelete = {onClickDelete}
+							/>
 						</div>
 					</Fragment>
 				)

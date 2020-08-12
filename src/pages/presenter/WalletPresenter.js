@@ -1,8 +1,6 @@
 import React,{Fragment,Component} from 'react';
-
 /* Importando estilos css */
 import '../../assets/styles/pages/WalletPresenter.css';
-
 /* Importando componentes */
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';

@@ -14,9 +14,9 @@ class KanbanContainer extends Component{
 				user: "",
 				titlePage:"kanban"
 			},
-
 			info: []
 		}
+		this.handleClickDelete = this.handleClickDelete.bind(this);
 	}
 	handleChange = (e) => {		
 		this.setState({
@@ -40,6 +40,13 @@ class KanbanContainer extends Component{
 		this.state.info.push(this.state.data);
 		document.getElementById('miForm').reset();		
 	}
+	handleClickDelete = (id) => {
+		this.setState({
+			info: this.state.info.filter((e,i) => {
+				return i != id
+			})
+		})
+	}
 	render() {
 		return (
 			<Fragment>
@@ -48,6 +55,7 @@ class KanbanContainer extends Component{
 					onClick = {this.handleClick}
 					onChange = {this.handleChange}
 					info = {this.state.info}
+					onClickDelete = {this.handleClickDelete}
 				/>
 			</Fragment>
 		);

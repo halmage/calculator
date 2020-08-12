@@ -1,18 +1,15 @@
 import React,{Fragment,Component} from 'react';
-
 /* Importando pagina */
 import KanbanPresenter from '../presenter/KanbanPresenter';
-
 /* Importando componentes */
 import Header from '../../components/Header';
 import FormKanban from '../../components/FormKanban';
 import ListKanban from '../../components/ListKanban';
 import TitlePage from '../../components/TitlePage.js';
 
-
 class KanbanContainer extends Component{
 	render() {
-		const {onChange,onClick,data,info} = this.props;
+		const {onChange,onClick,onClickDelete,data,info} = this.props;
 		return (
 			<Fragment>
 				<Header/>
@@ -32,7 +29,10 @@ class KanbanContainer extends Component{
 									</div>					
 									<div className="col-md-8">
 										<div className="row">
-											<ListKanban info = {info}/>									
+											<ListKanban 
+												info = {info}
+												onClickDelete = {onClickDelete}
+											/>																				
 										</div>
 									</div>
 
