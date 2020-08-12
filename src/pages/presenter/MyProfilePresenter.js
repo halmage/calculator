@@ -44,5 +44,4 @@ class MyProfilePresenter extends Component{
 		);
 	}
 }
-
 export default MyProfilePresenter;

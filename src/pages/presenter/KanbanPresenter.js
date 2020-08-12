@@ -13,7 +13,6 @@ import TitlePage from '../../components/TitlePage.js';
 class KanbanContainer extends Component{
 	render() {
 		const {onChange,onClick,data,info} = this.props;
-
 		return (
 			<Fragment>
 				<Header/>
@@ -45,5 +44,4 @@ class KanbanContainer extends Component{
 		);
 	}
 }
-
 export default KanbanContainer;

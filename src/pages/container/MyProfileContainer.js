@@ -4,25 +4,25 @@ import React,{Fragment,Component} from 'react';
 import MyProfilePresenter from '../presenter/MyProfilePresenter';
 
 class MyProfileContainer extends Component{
-
-	state={
-		data:{
-			avatar:"",
-			identyfy:"",
-			name:"",
-			last_name:"",
-			city:"",
-			work:"",
-			content:"",
-			titlePage:"Formulario del perfil"
+	constructor(props) {
+	  super(props);	
+	  this.state={
+			data:{
+				avatar:"",
+				identyfy:"",
+				name:"",
+				last_name:"",
+				city:"",
+				work:"",
+				content:"",
+				titlePage:"Formulario del perfil"
+			}
 		}
 	}
-
 	hadlerSubmit = (e) =>{
 		e.preventDefault();
 		console.log(this.state);
 	}
-
 	hadlerChange = (e) =>{
 		this.setState({
 			data:{
@@ -31,8 +31,6 @@ class MyProfileContainer extends Component{
 			}
 		});
 	}
-
-
 	render() {
 		return (
 			<Fragment>
@@ -45,5 +43,4 @@ class MyProfileContainer extends Component{
 		);
 	}
 }
-
 export default MyProfileContainer;

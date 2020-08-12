@@ -4,14 +4,14 @@ import React,{Fragment,Component} from 'react';
 import WalletPresenter from '../presenter/WalletPresenter';
 
 class WalletContainer extends Component{
-
-	global ={
-		varibles:{
-			vdate: new Date()
+	constructor(props) {
+	  super(props);	
+	  this.global ={
+			varibles:{
+				vdate: new Date()
+			}
 		}
-	}
-
-	state = {
+		this.state = {
 			data:{
 				id: 1,
 				wallet:0,
@@ -25,7 +25,7 @@ class WalletContainer extends Component{
 			},
 			info: []
 		}
-
+	}
 	handlerClick = (e) => {
 		e.preventDefault();
 		let date = new Date();
@@ -50,9 +50,7 @@ class WalletContainer extends Component{
 		}else {
 				alert("Todos los campos son obligatorios");
 		}
-
 	}
-
 	handlerChange = (e) =>{
 		this.setState({
 			data:{
@@ -61,7 +59,6 @@ class WalletContainer extends Component{
 			}
 		})
 	}
-
 	render() {
 		return (
 			<Fragment>
@@ -75,5 +72,4 @@ class WalletContainer extends Component{
 		);
 	}
 }
-
 export default WalletContainer;

@@ -42,7 +42,5 @@ class WalletPresenter extends Component{
 
 		);
 	}
-
 }
-
 export default WalletPresenter;

@@ -17,5 +17,4 @@ class ListKanban extends Component{
 		);
 	}
 }
-
 export default ListKanban;

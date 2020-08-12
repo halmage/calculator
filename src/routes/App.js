@@ -9,7 +9,6 @@ import CardNewContainer from '../pages/container/CardNewContainer';
 import MyProfileContainer from '../pages/container/MyProfileContainer';
 import CalculatorContainer from '../pages/container/CalculatorContainer';
 
-
 class App extends Component{
 	render() {
 		return (
@@ -26,5 +25,4 @@ class App extends Component{
 		);
 	}
 }
-
 export default App;

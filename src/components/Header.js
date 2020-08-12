@@ -3,7 +3,6 @@ import React,{Fragment,Component} from 'react';
 
 /* Importando Css */
 import '../assets/styles/componentes/Header.css';
-
 class Header extends Component{
 	render() {
 		return (
@@ -22,5 +21,4 @@ class Header extends Component{
 		);
 	}
 }
-
 export default Header;

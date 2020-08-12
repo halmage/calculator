@@ -37,5 +37,4 @@ class TableInformationWallet extends Component{
 		);
 	}
 }
-
  export default TableInformationWallet;

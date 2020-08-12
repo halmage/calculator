@@ -30,5 +30,4 @@ class TableOperation extends Component{
 		);
 	}
 }
-
 export default TableOperation;

@@ -11,7 +11,6 @@ import Information from '../../components/Information';
 import '../../assets/styles/pages/HomePresenter.css';
 
 class HomePresenter extends Component{
-
 	constructor(props) {
 	  super(props);
 	
@@ -20,7 +19,6 @@ class HomePresenter extends Component{
 	  		titlePage: props.titlePage
 	  };
 	}
-
 	render() {		
 		return (
 			<Fragment>
@@ -45,5 +43,4 @@ class HomePresenter extends Component{
 		);
 	}
 }
-
 export default HomePresenter;

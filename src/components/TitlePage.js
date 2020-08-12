@@ -13,5 +13,4 @@ class TitlePage extends Component{
 		);
 	}
 }
-
 export default TitlePage;

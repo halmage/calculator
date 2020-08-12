@@ -9,8 +9,5 @@ import App from './routes/App';
 
 const container = document.getElementById('root');
 
-render(
-  	<App/>,
-  container  
-);
+render(<App/>,container);
 
