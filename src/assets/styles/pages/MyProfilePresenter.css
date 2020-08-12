@@ -1,3 +1,8 @@
-.my-profile-container{
-	height: 95vh;
+:root{
+	/* Margenes */ 
+	--mg-my-profile-footer: 6vh;
+}
+
+.my-profile-footer{
+	margin-top: var(--mg-my-profile-footer);
 }

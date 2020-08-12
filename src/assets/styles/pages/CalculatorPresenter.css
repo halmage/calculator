@@ -1,3 +1,7 @@
-.container-calculator{
-	height: 70vh;
+:root{	/* Margenes */
+	--mg-calculator-footer: 23vh;
+}
+
+.calculator-footer{
+	margin-top: var(--mg-calculator-footer);
 }

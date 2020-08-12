@@ -14,7 +14,7 @@ class MyProfilePresenter extends Component{
 		return (
 			<Fragment>
 				<Header/>
-				<section className="container my-profile-container mt-5">
+				<section className="container mt-5">
 					<div className="card">
 						<div className="card-title">
 							<TitlePage data={data}/>
@@ -37,7 +37,9 @@ class MyProfilePresenter extends Component{
 						</div>
 					</div>
 				</section>
-				<Footer/>
+				<div className="my-profile-footer">
+					<Footer/>
+				</div>
 			</Fragment>
 		);
 	}

@@ -3,9 +3,13 @@ import React,{Fragment,Component} from 'react';
 import KanbanPresenter from '../presenter/KanbanPresenter';
 /* Importando componentes */
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import FormKanban from '../../components/FormKanban';
 import ListKanban from '../../components/ListKanban';
-import TitlePage from '../../components/TitlePage.js';
+import TitlePage from '../../components/TitlePage';
+
+/* Estilos de css */
+import '../../assets/styles/pages/KanbanPresenter.css';
 
 class KanbanContainer extends Component{
 	render() {
@@ -40,6 +44,9 @@ class KanbanContainer extends Component{
 							</div>
 						</div>
 					</section>
+					<div className="kanban-footer">					
+						<Footer/>
+					</div>
 			</Fragment>
 		);
 	}

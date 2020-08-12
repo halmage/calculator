@@ -16,7 +16,7 @@ class CardNewPresenter extends Component{
 		return (
 			<Fragment>
 				<Header/>	
-					<section className="container container-card-new mt-5">
+					<section className="container mt-5">
 						<div class="card">
 							<div className="card-title">
 								<TitlePage data={data}/>
@@ -37,7 +37,9 @@ class CardNewPresenter extends Component{
 							</div>
 						</div>											
 					</section>
-				<Footer/>
+				<div className="card-new-footer">
+					<Footer/>
+				</div>
 			</Fragment>
 		);
 	}

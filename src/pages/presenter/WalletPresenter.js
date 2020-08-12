@@ -15,7 +15,7 @@ class WalletPresenter extends Component{
 		return (
 			<Fragment>
 				<Header/>
-					<section className="container mt-5 wallet-container">	
+					<section className="container mt-5">	
 						<div className="card">
 							<div className="card-title">
 								<TitlePage data={data}/>
@@ -35,9 +35,10 @@ class WalletPresenter extends Component{
 								</div>
 						</div>
 					</section>
-				<Footer/>
+				<div className="wallet-footer">
+					<Footer/>
+				</div>
 			</Fragment>
-
 		);
 	}
 }

@@ -1,3 +1,8 @@
-.home-container{
-	height: 143vh;
+:root{
+   /*Margenes*/
+   --mg-home-footer:5vh;
+}
+
+.home-footer{
+	margin-top: var(--mg-home-footer);
 }

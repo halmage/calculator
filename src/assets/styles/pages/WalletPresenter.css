@@ -1,9 +1,8 @@
 :root{
-
 	/* Margenes de la pagina */
-	--mr-height-content: 70vh;
+	--mg-wallet-footer: 32.1vh;
 }
 
-.wallet-container{
-	height: var(--mr-height-content);
+.wallet-footer{
+	margin-top: var(--mg-wallet-footer);
 }

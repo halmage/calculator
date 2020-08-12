@@ -17,7 +17,7 @@ class CalculatorPresenter extends Component{
 		return (			
 			<Fragment>	
 				<Header/>
-				<section className="container container-calculator mt-5">					
+				<section className="container mt-5">					
 					<div class="card">
 					  <div class="card-title">
 					  		<TitlePage data = {data}/>
@@ -33,8 +33,10 @@ class CalculatorPresenter extends Component{
 							</div>
 					  </div>
 					</div>					
-				</section>				
-				<Footer/>
+				</section>	
+				<div className="calculator-footer">				
+					<Footer/>
+				</div>
 			</Fragment>	
 		);
 	}

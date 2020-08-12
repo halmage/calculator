@@ -1,0 +1,8 @@
+:root{
+	/* Margenes */
+	--mg-kanban-footer:12vh;
+}
+
+.kanban-footer{
+	margin-top: var(--mg-kanban-footer);
+}

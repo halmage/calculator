@@ -1,3 +1,8 @@
-.container-card-new{
-	height: 70vh;
+:root{
+	/*Margener*/
+	--mg-card-new-footer:11vh;
+}
+
+.card-new-footer{
+	margin-top: var(--mg-card-new-footer);
 }
