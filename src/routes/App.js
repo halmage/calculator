@@ -3,6 +3,7 @@ import {BrowserRouter,Route,Switch} from 'react-router-dom';
 
 /* Llamadas de las paginas */
 import HomeContainer from '../pages/container/HomeContainer';
+import ShopContainer from '../pages/container/ShopContainer';
 import KanbanContainer from '../pages/container/KanbanContainer';
 import WalletContainer from '../pages/container/WalletContainer';
 import CardNewContainer from '../pages/container/CardNewContainer';
@@ -15,6 +16,7 @@ class App extends Component{
 			<BrowserRouter>
 				<Switch>				
 					<Route exact path="/" component={HomeContainer}/>
+					<Route exact path="/tienda" component={ShopContainer}/>
 					<Route exact path="/Kanban" component={KanbanContainer}/>
 					<Route exact path="/billetera" component={WalletContainer}/>
 					<Route exact path="/crear-card" component={CardNewContainer}/>

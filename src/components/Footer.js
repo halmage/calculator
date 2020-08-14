@@ -47,7 +47,7 @@ class Footer extends Component{
 										<Link to="kanban" class="nav-link">kanban</Link>
 									</li>
 									<li className="nav-item">
-										<Link to="/calculadora" className="nav-link">Calculadora</Link>
+										<Link to="/tienda" className="nav-link">Tienda</Link>
 									</li>
 									<li className="nav-item">
 										<a className="nav-link">Item#1</a>

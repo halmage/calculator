@@ -1,6 +1,5 @@
 import React,{Fragment,Component} from 'react';
-/* Importando pagina */
-import KanbanPresenter from '../presenter/KanbanPresenter';
+
 /* Importando componentes */
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
