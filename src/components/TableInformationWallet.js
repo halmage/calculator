@@ -1,5 +1,4 @@
 import React,{Fragment,Component} from 'react';
-
 /* Importando estilos de css */
 import '../assets/styles/componentes/TableInformationWallet.css';
 
@@ -37,4 +36,4 @@ class TableInformationWallet extends Component{
 		);
 	}
 }
- export default TableInformationWallet;
+export default TableInformationWallet;

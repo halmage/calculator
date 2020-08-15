@@ -1,6 +1,5 @@
 import React,{Component} from 'react';
 import {BrowserRouter,Route,Switch} from 'react-router-dom';
-
 /* Llamadas de las paginas */
 import HomeContainer from '../pages/container/HomeContainer';
 import ShopContainer from '../pages/container/ShopContainer';

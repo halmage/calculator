@@ -1,12 +1,10 @@
 import React,{Fragment,Component} from 'react';
-
 /* Llamando componentes */
 import Footer from '../../components/Footer';
 import Card     from '../../components/Card';
 import Header   from '../../components/Header';
 import FormCard from '../../components/FormCard';
 import TitlePage from '../../components/TitlePage';
-
 /* Llamando estilos de css */
 import '../../assets/styles/pages/CardNewPresenter.css';
 

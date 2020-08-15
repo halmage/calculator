@@ -1,19 +1,16 @@
 import React,{Fragment,Component} from 'react';
-
 /* Importacion de componentes */
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import TitlePage from '../../components/TitlePage';
 import TableOperation from '../../components/TableOperation';
 import FormCalculator from '../../components/FormCalculator';
-
 /* Importación de estilos de css */
 import '../../assets/styles/pages/CalculatorPresenter.css';
 
 class CalculatorPresenter extends Component{
 	render() {
 		const {onClick, onChange, data} = this.props;
-
 		return (			
 			<Fragment>	
 				<Header/>

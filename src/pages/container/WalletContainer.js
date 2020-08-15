@@ -1,5 +1,4 @@
 import React,{Fragment,Component} from 'react';
-
 /* Importando componente */
 import WalletPresenter from '../presenter/WalletPresenter';
 

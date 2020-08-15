@@ -1,5 +1,4 @@
 import React,{Component,Fragment} from 'react';
-
 /* Importando componentes */
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -8,7 +7,7 @@ import TitlePage from '../../components/TitlePage';
 
 class ShopPresenter extends Component{
 	render() {
-		const  {titlePage,articles} = this.props;		
+		const  {titlePage,info} = this.props;		
 		return (
 			<Fragment>
 				<Header/>
@@ -20,7 +19,7 @@ class ShopPresenter extends Component{
 									<TitlePage data={titlePage}/>
 								</div>
 								<div className="card-body">
-									<ListShop articles ={articles}/>
+									<ListShop info ={info}/>
 								</div>
 							</div>
 						</div>

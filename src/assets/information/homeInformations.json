@@ -1,0 +1,15 @@
+{
+	"home": [{
+	        "title": "El rey leon",
+	        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+	        "image": "./images/articles/image-1.jpg"
+	    },{
+	        "title": "El oso mayor",
+	        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+	        "image": "./images/articles/image-2.jpg"
+	    },{
+	        "title": "El serpiente tenebrosa",
+	        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+	        "image": "./images/articles/image-3.jpg"
+	    }]
+}

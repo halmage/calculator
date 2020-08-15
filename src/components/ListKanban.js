@@ -1,4 +1,5 @@
 import React,{Fragment,Component} from 'react';
+/* Importando componente */
 import Kanban from './Kanban';
 
 class ListKanban extends Component{

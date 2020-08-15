@@ -1,8 +1,8 @@
 import {Link} from 'react-router-dom';
 import React,{Fragment,Component} from 'react';
-
-/* Importando Css */
+/* Importando estilo de Css */
 import '../assets/styles/componentes/Header.css';
+
 class Header extends Component{
 	render() {
 		return (

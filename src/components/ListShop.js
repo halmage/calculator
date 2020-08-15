@@ -1,16 +1,15 @@
 import React,{Component,Fragment} from 'react';
-
 /* Importando componentes */
 import Card from './Card';
 	
 class ListShop extends Component{
     render() {
-      const {articles} = this.props;     
+      const {info} = this.props;     
       return (
-        articles.articles.map((article, i) => {
+        info.shop.map((inf, i) => {
             return ( 
               <Fragment>
-               	  <Card key={i} info={article}/>
+               	  <Card key={i} info={inf}/>
               </Fragment>
             )
         })

@@ -1,12 +1,13 @@
 import React,{Fragment,Component} from 'react';
+/* Importando componente */
 import Card from './Card';
 
 class ListCard extends Component{
 	render() {
 		const {info} = this.props;
-		console.log(info.length);
+		console.log({info});
 		return (
-			info.map((inf,i) =>{
+			info.home.map((inf,i) =>{
 				return(
 					<Fragment>					
 						<div className="col-md-6 mt-3">					

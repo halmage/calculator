@@ -1,5 +1,4 @@
 import React,{Fragment,Component} from 'react';
-
 /* importando estilos */
 import '../assets/styles/componentes/FormProfile.css';
 
