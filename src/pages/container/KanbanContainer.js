@@ -1,5 +1,4 @@
 import React,{Fragment,Component} from 'react';
-
 /* Importando pagina */
 import KanbanPresenter from '../presenter/KanbanPresenter';
 

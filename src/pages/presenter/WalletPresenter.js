@@ -4,10 +4,10 @@ import '../../assets/styles/pages/WalletPresenter.css';
 /* Importando componentes */
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
+import TitlePage from '../../components/TitlePage';
 import FormWallet from '../../components/FormWallet';
 import MoneyWallet from '../../components/MoneyWallet';
 import TableInformationWallet from '../../components/TableInformationWallet';
-import TitlePage from '../../components/TitlePage';
 
 class WalletPresenter extends Component{
 	render() {

@@ -1,8 +1,8 @@
 import React,{Fragment,Component} from 'react';
+/* Importando estilos del componente */
 import '../assets/styles/componentes/Card.css';
 
 class Kanban extends Component{
-
 	render() {
 		const {info,onClickDelete,id} = this.props;		
 		return (
@@ -17,7 +17,6 @@ class Kanban extends Component{
 					<div className="card-body">
 						<p className="card-text text-center">{info.content}</p>
 						<p className="text-center h3">{info.user}</p>
-						<p>{id}</p>
 					</div>
 					<div className="card-footer">
 						<button className="btn btn-block btn-danger" onClick={onClickDelete.bind(this,id)}>Eliminar</button>

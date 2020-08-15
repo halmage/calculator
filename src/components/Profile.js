@@ -1,5 +1,4 @@
 import React,{Fragment,Component} from 'react';
-
 /* Importación de estilo de css */
 import '../assets/styles/componentes/Profile.css';
 

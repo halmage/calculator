@@ -1,5 +1,4 @@
 import React,{Fragment,Component} from 'react';
-
 /* Llmando a componentes */
 import MyProfilePresenter from '../presenter/MyProfilePresenter';
 

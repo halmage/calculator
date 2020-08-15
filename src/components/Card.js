@@ -1,4 +1,5 @@
 import React,{Fragment,Component} from 'react';
+/* Llamando estilo del componente */
 import '../assets/styles/componentes/Card.css';
 
 class Card extends Component{
@@ -17,5 +18,4 @@ class Card extends Component{
 		);
 	}
 }
-
 export default Card;

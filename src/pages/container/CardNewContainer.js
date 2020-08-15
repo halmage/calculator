@@ -1,5 +1,4 @@
 import React,{Fragment,Component} from 'react';
-
 /* Llamando componentes */
 import CardNewPersenter from '../presenter/CardNewPresenter';
 

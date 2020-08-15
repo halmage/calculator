@@ -1,9 +1,7 @@
 import {Link} from 'react-router-dom';
 import React,{Fragment, Component} from 'react';
-
 /* Llamado de estilo de css */
 import '../assets/styles/componentes/Footer.css';
-
 /* Importando imagenes */
 import Logo from '../assets/images/logo/crearlogogratis_1024x1024_01.png';
 
@@ -47,7 +45,7 @@ class Footer extends Component{
 										<Link to="kanban" class="nav-link">kanban</Link>
 									</li>
 									<li className="nav-item">
-										<Link to="/calculadora" className="nav-link">Calculadora</Link>
+										<Link to="/tienda" className="nav-link">Tienda</Link>
 									</li>
 									<li className="nav-item">
 										<a className="nav-link">Item#1</a>
@@ -61,5 +59,4 @@ class Footer extends Component{
 		);
 	}
 }
-
 export default Footer;

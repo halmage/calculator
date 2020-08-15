@@ -1,5 +1,4 @@
 import React,{Fragment,Component} from 'react';
-
 /* Importando estilos de css */
 import '../assets/styles/componentes/FormCard.css';
 
@@ -32,5 +31,4 @@ class FormCard extends Component{
 		);
 	}
 }
-
 export default FormCard;

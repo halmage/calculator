@@ -1,5 +1,4 @@
 import React,{Component} from 'react';
-
 /* Importando estilos a la pagina */
 import '../assets/styles/componentes/TitlePage.css';
 
