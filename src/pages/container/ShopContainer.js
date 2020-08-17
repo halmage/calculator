@@ -1,5 +1,5 @@
 import React,{Component,Fragment} from 'react';
-/*importando información de json*/
+/* Importando información de json */
 import shopInformations from '../../assets/information/shopInformations.json'
 /* Importando pagina */
 import ShopPresenter from '../presenter/ShopPresenter';
@@ -12,7 +12,6 @@ class ShopContainer extends Component{
 	  	titlePage: "Tienda Virtual"
 	  };
 	}
-
 	render() {
 		return (
 			<Fragment>

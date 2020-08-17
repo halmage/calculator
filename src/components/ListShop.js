@@ -1,6 +1,6 @@
 import React,{Component,Fragment} from 'react';
 /* Importando componentes */
-import Card from './Card';
+import ShopCard from './ShopCard';
 	
 class ListShop extends Component{
     render() {
@@ -9,7 +9,9 @@ class ListShop extends Component{
         info.shop.map((inf, i) => {
             return ( 
               <Fragment>
-               	  <Card key={i} info={inf}/>
+                <div className="p-2 ml-4">
+               	  <ShopCard key={i} info={inf}/>
+                </div>
               </Fragment>
             )
         })
