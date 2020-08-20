@@ -9,7 +9,7 @@ import '../../assets/styles/pages/ShopPresenter.css';
 
 class ShopPresenter extends Component{
 	render() {
-		const  {titlePage,info} = this.props;		
+		const  {titlePage,info,onClick} = this.props;		
 		return (
 			<Fragment>
 				<Header/>
@@ -22,7 +22,9 @@ class ShopPresenter extends Component{
 								</div>
 								<div className="card-body">
 									<div className="row container">
-										<ListShop info ={info}/>
+										<ListShop info ={info}
+												  onClick={onClick}
+										/>
 									</div>
 								</div>
 							</div>                                                       

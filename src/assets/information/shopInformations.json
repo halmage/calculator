@@ -1,25 +1,32 @@
 {
 	"shop": [{
+		"id":"0",
 	    "title": "discos",
 	    "content": "juegos de niños",
-	    "image": "./images/shop/article-1.jpg"
+	    "image": "./images/shop/article-1.jpg",
+	    "cant":""
 	}, {
+		"id":"1",
 	    "title": "muñeca",
 	    "content": "juegos de niñas",
 	    "image": "./images/shop/article-2.jpg"
 	}, {
+		"id":"2",
 	    "title": "bestido",
 	    "content": "bestido de niñas",
 	    "image": "./images/shop/article-3.jpg"
 	}, {
+		"id":"3",
 	    "title": "chaqueta",
 	    "content": "ropa de niños",
 	    "image": "./images/shop/article-4.jpg"
 	}, {
+		"id":"4",
 	    "title": "balon",
 	    "content": "deporte de niños",
 	    "image": "./images/shop/article-5.jpg"
 	}, {
+		"id":"5",
 	    "title": "guante",
 	    "content": "guante de football",
 	    "image": "./images/shop/article-6.jpg"
