@@ -10,29 +10,43 @@ class ShopContainer extends Component{
 	  this.state = {
 	  	info:shopInformations,
 	  	titlePage: "Tienda Virtual",
-	  	cant:[]
+	  	items:[]	  	
 	  };
-	  this.handlerClick = this.handlerClick.bind(this);
 	}
 
-	handlerClick = (id) =>{		
-		this.state.cant.push(id);	
+	Com
+
+	handlerClick = (id) => {	
         let articles = this.state.info.shop.filter(article => {
             let res = this.state.info.shop.find((following) => {
                 return article.id != id;
             });
             return res == undefined;
-        });
-        console.log(articles);
+        });       
+        this.setState({
+        	items:[...this.state.items,Object.assign({}, articles[0])]
+        });        
 	}
-
+	handlerClickDelete = (id) =>{		
+		this.setState({		
+			items:this.state.items.filter((e,i)=>{
+				if(this.state.items.length == 1){					
+					i = id
+					return i != id
+				}
+				return i != id
+			})
+		})
+	}
 	render() {
 		return (
 			<Fragment>
 				<ShopPresenter 
-					titlePage={this.state.titlePage}
-					info={this.state.info}
-					onClick ={this.handlerClick}
+					info = {this.state.info}
+					items = {this.state.items}
+					onClick = {this.handlerClick}
+					titlePage = {this.state.titlePage}
+					onClickDelete = {this.handlerClickDelete}
 				/>
 			</Fragment>
 		);

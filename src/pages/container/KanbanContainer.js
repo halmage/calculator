@@ -15,7 +15,6 @@ class KanbanContainer extends Component{
 			},
 			info: []
 		}
-		this.handleClickDelete = this.handleClickDelete.bind(this);
 	}
 	handleChange = (e) => {		
 		this.setState({

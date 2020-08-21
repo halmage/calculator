@@ -1,0 +1,22 @@
+:root{
+	/* margenes */
+	--mg-size-image:50px;
+}
+
+.image-list-style{
+	width: var(--mg-size-image);
+	height: var(--mg-size-image);
+}
+
+.list-group-item + .list-group-item {
+    border-top-width: 0;
+    background: whitesmoke;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.4rem 0.4rem;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}

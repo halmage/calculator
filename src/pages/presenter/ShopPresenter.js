@@ -4,12 +4,13 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import ListShop from '../../components/ListShop';
 import TitlePage from '../../components/TitlePage';
+import ListShopTrolley from '../../components/ListShopTrolley';
 /* Importando estilos de css */
 import '../../assets/styles/pages/ShopPresenter.css';
 
 class ShopPresenter extends Component{
 	render() {
-		const  {titlePage,info,onClick} = this.props;		
+		const  {titlePage,info,items,onClick,onClickDelete} = this.props;	
 		return (
 			<Fragment>
 				<Header/>
@@ -37,11 +38,13 @@ class ShopPresenter extends Component{
 									</svg>  
 									<br/>
 									carrito 
+									<br/>
+									<span>{items.length > 0 ? items.length : ""}</span>
 								</li>
-								<li class="list-group-item">Dapibus ac facilisis in</li>
-								<li class="list-group-item">Morbi leo risus</li>
-								<li class="list-group-item">Porta ac consectetur ac</li>
-								<li class="list-group-item">Vestibulum at eros</li>
+								<ListShopTrolley 
+								         items = {items}
+								         onClickDelete = {onClickDelete}
+								/>
 							</ul>
 						</div>
 					</div>
