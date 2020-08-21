@@ -10,21 +10,35 @@ class ShopContainer extends Component{
 	  this.state = {
 	  	info:shopInformations,
 	  	titlePage: "Tienda Virtual",
-	  	items:[]	  	
+	  	items:[],
+	  	total:0	  	
 	  };
 	}
-	handlerClick = (id) => {	
-        let articles = this.state.info.shop.filter(article => {
+
+	findArticle = (id) =>{
+		return this.state.info.shop.filter(article => {
             let res = this.state.info.shop.find((following) => {
                 return article.id != id;
             });
             return res == undefined;
-        });       
-        this.setState({
-        	items:[...this.state.items,Object.assign({}, articles[0])]
-        });        
+        });
 	}
-	handlerClickDelete = (id) =>{		
+
+	handlerClick = (id) => {	               
+		let articles = this.state.info.shop.filter(article => {
+            let res = this.state.info.shop.find((following) => {
+                return article.id != id;
+            });
+            return res == undefined;
+        });
+        this.setState({
+        	items:[...this.state.items,Object.assign({}, articles[0])],
+        	total: this.state.total + parseFloat(articles[0].price)
+        });   
+        console.log(articles[0].price);     
+	}
+	handlerClickDelete = (id,item) =>{		
+		let articles =  this.findArticle(id);
 		this.setState({		
 			items:this.state.items.filter((e,i)=>{
 				if(this.state.items.length == 1){					
@@ -32,8 +46,9 @@ class ShopContainer extends Component{
 					return i != id
 				}
 				return i != id
-			})
-		})
+			}),
+			total: this.state.total - parseFloat(item.price)
+		});
 	}
 	render() {
 		return (
@@ -41,6 +56,7 @@ class ShopContainer extends Component{
 				<ShopPresenter 
 					info = {this.state.info}
 					items = {this.state.items}
+					total = {this.state.total}
 					onClick = {this.handlerClick}
 					titlePage = {this.state.titlePage}
 					onClickDelete = {this.handlerClickDelete}
