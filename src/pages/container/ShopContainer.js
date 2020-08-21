@@ -13,9 +13,6 @@ class ShopContainer extends Component{
 	  	items:[]	  	
 	  };
 	}
-
-	Com
-
 	handlerClick = (id) => {	
         let articles = this.state.info.shop.filter(article => {
             let res = this.state.info.shop.find((following) => {
