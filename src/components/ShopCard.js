@@ -10,7 +10,7 @@ class ShopCard extends Component{
 				<div className="card" style={{width: "18rem", background:`${info.color}`}}>
 					<img src={info.image} className="card-img-top card-image-style" alt="..."/>
 					<div className="card-body">
-						<h5 className="card-title">{info.title}</h5>
+						<h5 className="card-title">{info.title} <span className="text-success h6">{info.price}$</span></h5>
 						<p className="card-text">{info.content}</p>
 					</div>			
 					<div className="card-footer">

@@ -1,6 +1,8 @@
 :root{
 	/* colores */
 	--bg-background-style:rgba(0, 0, 0, 0) linear-gradient(to right, rgb(43, 88, 118), rgb(78, 67, 118)) repeat scroll 0% 0%;
+	/* margenes */	
+	--mg-footer-margin-top:5vh;
 }
 
 .list-style{
@@ -9,4 +11,8 @@
 	color: white;
 	text-shadow: 1px 1px 1px cornflowerblue;
 	font-family: fantasy;
+}
+
+.shop-footer{
+	margin-top: var(--mg-footer-margin-top);
 }
