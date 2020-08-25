@@ -1,0 +1,8 @@
+:root{
+	/* Margenes */
+	--mg-margen-top:20px;
+}
+
+.messages-footer{
+	margin-top: var(--mg-margen-top);
+}

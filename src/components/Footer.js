@@ -25,7 +25,7 @@ class Footer extends Component{
 									</li>
 									<li className="nav-item">
 										<Link to="/mi-perfil" className="nav-link">Mi Perfil</Link>
-									</li>
+									</li>									
 								</ul>
 							</div>
 							<div class="col-md-3">
@@ -48,7 +48,7 @@ class Footer extends Component{
 										<Link to="/tienda" className="nav-link">Tienda</Link>
 									</li>
 									<li className="nav-item">
-										<a className="nav-link">Item#1</a>
+										<Link to="mensajeria" class="nav-link">Mensajeria</Link>
 									</li>
 								</ul>
 							</div>
