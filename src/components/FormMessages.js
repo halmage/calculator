@@ -1,33 +1,52 @@
 import React,{Component,Fragment} from 'react';
-
-class FormMessages extends Component{
+/* Importando estilos de css */
+import '../assets/styles/componentes/FormMessages.css';
+class FormMessages extends Component{	
 	render() {
+		const {data,info,onClick,onChange} = this.props;
 		return (
 			<Fragment>
 				<form>
 				   <div class="form-group">
-				    <label for="exampleFormControlSelect1">Yo:</label>
-				    <select class="form-control" id="exampleFormControlSelect1">
-				      <option>1</option>
-				      <option>2</option>
-				      <option>3</option>
-				      <option>4</option>
-				      <option>5</option>
+				    <label for="me" className="form-messages-label">Yo:</label>
+				    <select class="form-control text-uppercase form-messages-input" id="me" name="me" onChange={onChange}>
+				      <option value="">-- ¿Quien eres? --</option>
+				      {
+					     info.messages.map((message)=>{
+					       	return(
+								<Fragment>
+									<option value={message.id}>{message.name} {message.lost_name}</option>
+								</Fragment>
+					      	)
+					     })
+				      }
 				     </select>
 				  </div>
 				  <div class="form-group">
 				    <label for="exampleFormControlSelect1">Para:</label>
-				    <select class="form-control" id="exampleFormControlSelect1">
-				      <option>1</option>
-				      <option>2</option>
-				      <option>3</option>
-				      <option>4</option>
-				      <option>5</option>
+				    <select class="form-control text-uppercase form-messages-input" id="from" name="from" onChange={onChange}>
+				      <option value="">-- ¿para quien es el mensaje? --</option>
+				      {
+					     info.messages.map((message)=>{
+					       	return(
+								<Fragment>
+									<option value={message.id}>{message.name} {message.lost_name}</option>
+								</Fragment>
+					      	)
+					     })
+				      }
 				     </select>
 				  </div>
 				  <div class="form-group">
-					  <label for="exampleInputPassword1">Asunto:</label>
-					  <input type="text" class="form-control" id="exampleInputPassword1"/>
+					  <label for="matter">Asunto:</label>
+					  <input type="text" class="form-control form-messages-input" id="matter" name="matter" onChange={onChange}/>
+				  </div>
+				  <div class="form-group">
+						<label for="content">Contenido:</label>
+						<textarea class="form-control form-messages-input" id="content" name="content" onChange={onChange} rows="3"></textarea>
+				  </div>
+				  <div className="form-group">
+				  	  <button type="submit" class="btn btn-block form-messages-btn text-uppercase" onClick={onClick}>enviar</button>
 				  </div>
 				</form>
 			</Fragment>

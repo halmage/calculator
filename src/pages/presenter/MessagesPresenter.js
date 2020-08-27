@@ -8,7 +8,7 @@ import FormMessages from '../../components/FormMessages';
 import '../../assets/styles/pages/MessagesPresenter.css';
 class MessagesPresenter extends Component{
 	render() {
-		const {data} = this.props;
+		const {data,info,titlePage,onClick,onChange} = this.props;
 		return (
 			<Fragment>
 				<Header/>
@@ -17,14 +17,27 @@ class MessagesPresenter extends Component{
 						<div className="col-md-4">
 							<div class="card">
 							  <div className="card-title">
-							  	<TitlePage data={data}/>
+							  	<TitlePage data={titlePage}/>
 							  </div>
 							  <div class="card-body">
-							    <FormMessages/>
+							    <FormMessages 
+							    	data={data}
+							    	info={info}
+							    	onClick={onClick}
+							    	onChange={onChange}							    	
+							    />
 							  </div>
 							</div>
 						</div>
 						<div className="col-md-8">
+							<div class="card">
+							  <div className="card-title">
+							  	<TitlePage data="recepcion de mensajes"/>
+							  </div>
+							  <div class="card-body">
+							    
+							  </div>
+							</div>
 						</div>
 					</div>
 				</section>
