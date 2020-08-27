@@ -36,11 +36,7 @@ class MessagesPresenter extends Component{
 							  </div>
 							  <div class="card-body">
 							  <ul className="list-group">
-							  							  	{
-							  		
-							  			
-							  				
-							  										  		
+							  	{		  		
 							  		data.messages.map((message,i)=>{	
 							  			return(
 							  				<Fragment>							  <li key={i} class="list-group-item mt-1">	
