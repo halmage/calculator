@@ -1,4 +1,4 @@
-import React,{Component,Fragment} from 'react';
+import React,{Component} from 'react';
 /* Importando pagina */
 import MessagesPresenter from '../presenter/MessagesPresenter';
 /* Importando información de json */
@@ -23,7 +23,7 @@ class MessagesContainer extends Component{
             let res = this.state.info.messages.find((following) => {
                 return user.id !== this.state.me;
             });
-            return res == undefined;
+            return res === undefined;
         });
         return userTransmitter[0];
 	}
@@ -32,7 +32,7 @@ class MessagesContainer extends Component{
             let res = this.state.info.messages.find((following) => {
                 return user.id !== this.state.from;
             });
-            return res == undefined;
+            return res === undefined;
         });
         return userReceiver[0];
 	}

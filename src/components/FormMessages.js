@@ -5,7 +5,7 @@ import ListOptionUserMessages from './ListOptionUserMessages';
 import '../assets/styles/componentes/FormMessages.css';
 class FormMessages extends Component{	
 	render() {
-		const {data,info,onClick,onChange} = this.props;
+		const {info,onClick,onChange} = this.props;
 		return (
 			<Fragment>
 				<form>

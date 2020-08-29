@@ -61,7 +61,7 @@ class CalculatorContainer extends Component{
         });
 	}
 	divisionOperation = () => {
-        if (this.state.data.num2 == 0) {
+        if (this.state.data.num2 === 0) {
             alert("Esta operacion no puede ser realizada");
         }
 

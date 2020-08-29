@@ -20,7 +20,7 @@ class HomePresenter extends Component{
 		return (
 			<Fragment>
 				<Header/>
-				<section class="container mt-5">				
+				<section className="container mt-5">				
 					<div className="row">					
 						<div className="col-md-5 col-lg-4">						
 							<ListCard info={this.state.info}/>
@@ -28,7 +28,7 @@ class HomePresenter extends Component{
 						<div className="col-md-7 col-lg-8 my-2">
 							<div className="card">
 								<TitlePage data={this.state.titlePage}/>
-								<div class="card-body">
+								<div className="card-body">
 									<Information/>
 								</div>
 							</div>
@@ -36,8 +36,9 @@ class HomePresenter extends Component{
 					</div>
 				</section>
 				<div className="home-footer">
+					<Footer/>
 				</div>
-				<Footer/>
+				
 			</Fragment>
 		);
 	}

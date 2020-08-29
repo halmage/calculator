@@ -11,8 +11,8 @@ class Footer extends Component{
 			<Fragment>
 				<footer className="navbar-nav footer-style">
 					<div className="container">
-						<div class="row mt-3 mb-3">
-							<div class="col-md-4">							
+						<div className="row mt-3 mb-3">
+							<div className="col-md-4">							
 								<ul className="navbar-nav text-center ml-5">
 									<li className="nav-item">
 									</li>
@@ -28,7 +28,7 @@ class Footer extends Component{
 									</li>									
 								</ul>
 							</div>
-							<div class="col-md-3">
+							<div className="col-md-3">
 								<figure>
 									<img src={Logo} className="logo-style" alt="logo" title="logo"/>
 									<figcaption className="text-uppercase text-center logo-test-style">
@@ -36,19 +36,19 @@ class Footer extends Component{
 									</figcaption>
 								</figure>
 							</div>
-							<div class="col-md-4">
+							<div className="col-md-4">
 								<ul className="navbar-nav text-center mr-5">
 									<li className="nav-item">
 									</li>
 										<Link to="/billetera" className="nav-link">Billetera</Link>
 									<li className="nav-item">
-										<Link to="kanban" class="nav-link">kanban</Link>
+										<Link to="kanban" className="nav-link">kanban</Link>
 									</li>
 									<li className="nav-item">
 										<Link to="/tienda" className="nav-link">Tienda</Link>
 									</li>
 									<li className="nav-item">
-										<Link to="mensajeria" class="nav-link">Mensajeria</Link>
+										<Link to="mensajeria" className="nav-link">Mensajeria</Link>
 									</li>
 								</ul>
 							</div>

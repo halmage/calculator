@@ -18,18 +18,18 @@ class ShopContainer extends Component{
 	findArticle = (id) =>{
 		return this.state.info.shop.filter(article => {
             let res = this.state.info.shop.find((following) => {
-                return article.id != id;
+                return article.id !== id;
             });
-            return res == undefined;
+            return res === undefined;
         });
 	}
 
 	handlerClick = (id) => {	               
 		let articles = this.state.info.shop.filter(article => {
             let res = this.state.info.shop.find((following) => {
-                return article.id != id;
+                return article.id !== id;
             });
-            return res == undefined;
+            return res === undefined;
         });
         this.setState({
         	items:[...this.state.items,Object.assign({}, articles[0])],
@@ -37,15 +37,14 @@ class ShopContainer extends Component{
         });   
         console.log(articles[0].price);     
 	}
-	handlerClickDelete = (id,item) =>{		
-		let articles =  this.findArticle(id);
+	handlerClickDelete = (id,item) =>{
 		this.setState({		
 			items:this.state.items.filter((e,i)=>{
-				if(this.state.items.length == 1){					
+				if(this.state.items.length === 1){					
 					i = id
-					return i != id
+					return i !== id
 				}
-				return i != id
+				return i !== id
 			}),
 			total: this.state.total - parseFloat(item.price)
 		});

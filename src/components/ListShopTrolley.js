@@ -12,7 +12,7 @@ class ListShopTrolley extends Component{
 					   <li key={i} class="list-group-item mt-1">
 					   	  <div className="row container mt-2">
 					   	  	<div className="col-md-10">
-							   <img src={item.image} className="img-thumbnail image-list-style float-left mr-2"/>
+							   <img src={item.image} alt={item.title} className="img-thumbnail image-list-style float-left mr-2"/>
 							   <p><span className="h5 text-capitalize">{item.title} <span className="text-success h6">{item.price}$</span></span>
 								   <br/>
 								   {item.content}							   

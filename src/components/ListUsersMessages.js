@@ -11,11 +11,11 @@ class ListUsersMessages extends Component{
 				<Fragment>							  <li key={i} class="list-group-item mt-1">
 					<div className="row">
 						<div className="col-md-4">
-							<img src={message.me.image} className="mb-2" width="50" height="50" style={{borderRadius:"30px", padding:"5px",background:"blue"}}/>
+							<img src={message.me.image} alt={message.me.name} className="mb-2" width="50" height="50" style={{borderRadius:"30px", padding:"5px",background:"blue"}}/>
 							<span className="text-capitalize"> 			{message.me.name} {message.me.lost_name}
 							</span>
 							<br/>
-							<img src={message.from.image} width="50" height="50" style={{borderRadius:"30px", padding:"5px",background:"red"}}/>
+							<img src={message.from.image} alt={message.from.name} width="50" height="50" style={{borderRadius:"30px", padding:"5px",background:"red"}}/>
 							<span className="text-capitalize"> {message.from.name} {message.from.lost_name}
 							</span>
 						</div>

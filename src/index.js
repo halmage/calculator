@@ -1,5 +1,5 @@
-import React,{StrictMode} from 'react';
-import ReactDOM,{render} from 'react-dom';
+import React from 'react';
+import {render} from 'react-dom';
 
 /* Importando libreria */
 import 'bootstrap/dist/css/bootstrap.css';
@@ -9,9 +9,5 @@ import App from './routes/App';
 
 const container = document.getElementById('root');
 
-render(
-	<StrictMode>
-		<App/>
-	</StrictMode>
-	,container);
+render(<App/>,container);
 

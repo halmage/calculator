@@ -41,7 +41,7 @@ class KanbanContainer extends Component{
 	handleClickDelete = (id) => {
 		this.setState({
 			info: this.state.info.filter((e,i) => {
-				return i != id
+				return i !== id
 			})
 		})
 	}

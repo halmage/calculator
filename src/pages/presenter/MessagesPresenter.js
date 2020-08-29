@@ -22,7 +22,6 @@ class MessagesPresenter extends Component{
 							  </div>
 							  <div class="card-body">
 							    <FormMessages 
-							    	data={data}
 							    	info={info}
 							    	onClick={onClick}
 							    	onChange={onChange}							    	
