@@ -1,6 +1,6 @@
 import React,{Fragment,Component} from 'react';
 
-class ListUserMessages extends Component{
+class ListOptionUserMessages extends Component{
 	render() {
 		const {info} = this.props;
 		return (
@@ -11,10 +11,10 @@ class ListUserMessages extends Component{
 							<Fragment>
 								<option value={message.id}>{message.name} {message.lost_name}</option>
 							</Fragment>
-						    )})
+					)})
 			}
 			</Fragment>
 		);
 	}
 }
-export default ListUserMessages;
+export default ListOptionUserMessages;
