@@ -6,10 +6,10 @@ class ListOptionUserMessages extends Component{
 		return (
 			<Fragment>
 			{
-			    info.messages.map((message) => {
+			    info.messages.map((message,i) => {
 				    return (
 							<Fragment>
-								<option value={message.id}>{message.name} {message.lost_name}</option>
+								<option key={i}  value={message.id}>{message.name} {message.lost_name}</option>
 							</Fragment>
 					)})
 			}

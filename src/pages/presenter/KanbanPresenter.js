@@ -14,12 +14,12 @@ class KanbanContainer extends Component{
 		return (
 			<Fragment>
 				<Header/>
-					<section class="container mt-5">
-						<div class="card">
+					<section className="container mt-5">
+						<div className="card">
 							<div className="card-title">
 								<TitlePage data={data}/>
 							</div>
-							<div class="card-body">
+							<div className="card-body">
 								<div className="row ml-4">
 									<div className="col-md-4">
 										<FormKanban

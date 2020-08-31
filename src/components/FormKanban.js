@@ -8,17 +8,17 @@ class FormKanban extends Component{
 		return (
 			<Fragment>			
 					<form id="miForm">
-					  <div class="form-group">
-					    <label for="title" className="label-style">Ingrese titulo</label>
-					    <input type="text" class="form-control input-style" name="title" id="title" value={data.title} onChange={onChange}/>				    
+					  <div className="form-group">
+					    <label className="label-style">Ingrese titulo</label>
+					    <input type="text" className="form-control input-style" name="title" id="title" value={data.title} onChange={onChange}/>				    
 					  </div>
-					  <div class="form-group">
-					    <label for="content" className="label-style">Ingrese contenido</label>
-					    <textarea class="form-control input-style" name="content" id="content" value={data.content} onChange={onChange}>	
+					  <div className="form-group">
+					    <label className="label-style">Ingrese contenido</label>
+					    <textarea className="form-control input-style" name="content" id="content" value={data.content} onChange={onChange}>	
 						</textarea>
 					  </div>
-					  <div class="form-group">
-					    <label for="priority" className="label-style">Ingrese dificultad</label>
+					  <div className="form-group">
+					    <label className="label-style">Ingrese dificultad</label>
 					    <select className="form-control" name="priority" id="priority" onChange={onChange}>
 					    	<option value="">-- seleccione una opción --</option>
 					    	<option value="bajo">Bajo</option>
@@ -26,11 +26,11 @@ class FormKanban extends Component{
 					    	<option value="alto">Alto</option>
 					    </select>
 					  </div>
-					  <div class="form-group">
-					    <label for="user" className="label-style">Ingrese a quien va dirigido</label>
-					    <input type="text" class="form-control input-style" name="user" id="user" value={data.user} onChange={onChange}/>
+					  <div className="form-group">
+					    <label className="label-style">Ingrese a quien va dirigido</label>
+					    <input type="text" className="form-control input-style" name="user" id="user" value={data.user} onChange={onChange}/>
 					  </div>				  
-					  <button type="submit" class="btn btn-block btn-primary btn-style" onClick={onClick}>Submit</button>
+					  <button type="submit" className="btn btn-block btn-primary btn-style" onClick={onClick}>Submit</button>
 
 					</form>
 			</Fragment>

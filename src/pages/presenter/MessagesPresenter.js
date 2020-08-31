@@ -16,11 +16,11 @@ class MessagesPresenter extends Component{
 				<section className="container mt-5">
 					<div className="row">
 						<div className="col-md-4">
-							<div class="card">
+							<div className="card">
 							  <div className="card-title">
 							  	<TitlePage data={titlePage}/>
 							  </div>
-							  <div class="card-body">
+							  <div className="card-body">
 							    <FormMessages 
 							    	info={info}
 							    	onClick={onClick}
@@ -30,11 +30,11 @@ class MessagesPresenter extends Component{
 							</div>
 						</div>
 						<div className="col-md-8">
-							<div class="card">
+							<div className="card">
 							  <div className="card-title">
 							  	<TitlePage data="recepcion de mensajes"/>
 							  </div>
-							  <div class="card-body">
+							  <div className="card-body">
 							  <ListUsersMessage data={data}/>
 							  </div>
 							</div>

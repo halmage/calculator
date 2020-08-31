@@ -15,16 +15,16 @@ class CalculatorPresenter extends Component{
 			<Fragment>	
 				<Header/>
 				<section className="container mt-5">					
-					<div class="card">
-					  <div class="card-title">
+					<div className="card">
+					  <div className="card-title">
 					  		<TitlePage data = {data}/>
 					  </div>
-					  <div class="card-body">
+					  <div className="card-body">
 							<div className="row">
-								<div class="col-md-12 col-lg-6">
+								<div className="col-md-12 col-lg-6">
 									<TableOperation data = {data} /> 
 								</div>
-								<div class="col-md-12 col-lg-6">
+								<div className="col-md-12 col-lg-6">
 									<FormCalculator onClick = {onClick} onChange = {onChange} data = {data} /> 
 								</div>
 							</div>

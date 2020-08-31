@@ -15,16 +15,16 @@ class CardNewPresenter extends Component{
 			<Fragment>
 				<Header/>	
 					<section className="container mt-5">
-						<div class="card">
+						<div className="card">
 							<div className="card-title">
 								<TitlePage data={data}/>
 							</div>
-							<div class="card-body">
-								<div class="row">
-									<div class="col-md-6">
+							<div className="card-body">
+								<div className="row">
+									<div className="col-md-6">
 										<Card info={data}/>
 									</div>
-									<div class="col-md-6">
+									<div className="col-md-6">
 										<FormCard
 											onChange = {onChange}
 											onClick = {onClick}

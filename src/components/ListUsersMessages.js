@@ -8,7 +8,8 @@ class ListUsersMessages extends Component{
 				{
 				data.messages.map((message,i)=>{
 				return(
-				<Fragment>							  <li key={i} class="list-group-item mt-1">
+				<Fragment>							
+				    <li key={i} className="list-group-item mt-1">
 					<div className="row">
 						<div className="col-md-4">
 							<img src={message.me.image} alt={message.me.name} className="mb-2" width="50" height="50" style={{borderRadius:"30px", padding:"5px",background:"blue"}}/>

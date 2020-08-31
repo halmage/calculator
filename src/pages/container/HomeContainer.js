@@ -16,8 +16,8 @@ class HomeContainer extends Component{
 		return (
 			<Fragment>
 				<HomePresenter 
-							info={this.state.info} 
-							titlePage={this.state.titlePage}
+					info={this.state.info} 
+					titlePage={this.state.titlePage}
 				/>
 			</Fragment>
 		);

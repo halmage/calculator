@@ -89,11 +89,9 @@ class CalculatorContainer extends Component{
 			case '*':
 				this.multiplicacionOperation();		
 				break;
-
 			case '/':
 				this.divisionOperation();
 				break;
-
 			default:
 				alert("No ha sido seleccionada ninguna operación");
 				break;

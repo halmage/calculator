@@ -34,8 +34,7 @@ class ShopContainer extends Component{
         this.setState({
         	items:[...this.state.items,Object.assign({}, articles[0])],
         	total: this.state.total + parseFloat(articles[0].price)
-        });   
-        console.log(articles[0].price);     
+        });     
 	}
 	handlerClickDelete = (id,item) =>{
 		this.setState({		

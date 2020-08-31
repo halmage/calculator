@@ -9,7 +9,7 @@ class FormWallet extends Component{
 					<form id="miForm">
 						<div className="form-row align-items-center">
 							<div className="col-sm-4 my-1">
-								<label className="sr-only" for="inlineFormInputName">Descripción</label>
+								<label className="sr-only">Descripción</label>
 								<input type="text" 
 								       className="form-control" 
 								       id="description" 
@@ -19,7 +19,7 @@ class FormWallet extends Component{
 								       placeholder="Descripción"/>
 							</div>
 							<div className="col-sm-4 my-1">
-								<label className="sr-only" for="inlineFormInputGroupUsername">Monto</label>
+								<label className="sr-only">Monto</label>
 								<div className="input-group">
 									<div className="input-group-prepend">
 										<div className="input-group-text">$</div>

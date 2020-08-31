@@ -7,7 +7,7 @@ class TableOperation extends Component{
 		const {data} = this.props;
 		return (
 			<Fragment>
-				<table class="table table-bordered table-border-style text-center table-text-style">
+				<table className="table table-bordered table-border-style text-center table-text-style">
 					<thead>
 						<tr>
 							<th scope="col">Primer numero</th>

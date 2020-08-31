@@ -31,8 +31,8 @@ class ShopPresenter extends Component{
 							</div>                                                       
 						</div>
 						<div className="col-md-4">									
-							<ul class="list-group">
-								<li class="list-group-item container list-style text-center text-uppercase">
+							<ul className="list-group">
+								<li className="list-group-item container list-style text-center text-uppercase">
 									<div className="row">
 										<div className="col-md-5 mr-3">
 											<svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-cart ml-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
