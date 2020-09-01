@@ -7,7 +7,7 @@ class Header extends Component{
 	render() {
 		return (
 			<Fragment>
-				<header className="bg-header-style">				
+				<header className="bg-header-style d-flex justify-content-center">
 					<nav className="nav">						
 						<Link to="/" className="nav-link">Home</Link>
 						<Link to="/crear-card" className="nav-link">Crear Card</Link>

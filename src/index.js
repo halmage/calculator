@@ -3,7 +3,6 @@ import {render} from 'react-dom';
 
 /* Importando libreria */
 import 'bootstrap/dist/css/bootstrap.css';
-
 /* Llamando componentes */
 import App from './routes/App';
 
